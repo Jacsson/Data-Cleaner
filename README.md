@@ -15,7 +15,7 @@ Este projeto é uma ferramenta para manipulação de dados em arquivos CSV, XLSX
 
 ## Tecnologias Utilizadas
 
-- **Python 3.x**
+- **Python 3.2**
 - **Pandas** - Biblioteca para manipulação de dados.
 - **Openpyxl** - Biblioteca para manipulação de arquivos Excel (.xlsx).
 - **JSON** - Para manipulação de dados em formato JSON.
