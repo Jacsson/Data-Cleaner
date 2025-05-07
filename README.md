@@ -1,5 +1,5 @@
 
-Projeto de Tratamento de Dados em Python
+## Projeto de Tratamento de Dados em Python
 
 Este projeto é uma ferramenta para manipulação de dados em arquivos CSV, XLSX e JSON, incluindo funcionalidades como renomear colunas, alterar tipos de dados, tratar valores nulos, criar novas colunas, remover colunas e exportar para diferentes formatos. É uma ferramenta interativa e fácil de usar, ideal para quem precisa de manipulação de dados em Python.
 
@@ -36,7 +36,7 @@ Este projeto é uma ferramenta para manipulação de dados em arquivos CSV, XLSX
 
 ## Estimativas de Tempo para Desenvolvimento
 
-Aqui está o tempo estimado para o desenvolvimento de cada parte do projeto:
+Tempo estimado para o desenvolvimento de cada parte do projeto:
 
 | Parte do Projeto                                  | Estimativa de Tempo     |
 |---------------------------------------------------|-------------------------|
