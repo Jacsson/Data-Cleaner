@@ -29,9 +29,9 @@ Este projeto é uma ferramenta para manipulação de dados em arquivos CSV, XLSX
      ```
 
 2. **Rodando o Programa:**
-   - Execute o script `Tratamento.py` no terminal:
+   - Execute o script `Data-Cleaner.py` no terminal:
      ```bash
-     python Tratamento.py
+     python Data-Cleaner.py
      ```
 
 ## Estimativas de Tempo para Desenvolvimento
