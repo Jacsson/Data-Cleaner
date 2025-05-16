@@ -297,9 +297,10 @@ def criar_coluna(df):
     # Menu de opções para o usuário escolher o tipo de nova coluna que deseja criar
     print('Criar nova coluna\n')
     print('1 - Soma de duas colunas numéricas')
-    print('2 - Concatenação de duas colunas de texto')
-    print('3 - Preencher com valor fixo')
-    print('4 - Extrair ano, mês ou dia de coluna de datas')
+    print('2 - Multiplicação de uma coluna por outra')
+    print('3 - Concatenação de duas colunas de texto')
+    print('4 - Preencher com valor fixo')
+    print('5 - Extrair ano, mês ou dia de coluna de datas')
     print('0 - Retornar')
     
     opcao = input('\nEscolha uma opção: ')
@@ -319,9 +320,19 @@ def criar_coluna(df):
             print('Coluna criada com sucesso.')
         except Exception as e:
             print(f'Erro ao criar coluna: {e}')
+    elif opcao == '2':
+        col1 = input('Nome da primeira coluna numérica: ')
+        col2 = input('Nome da segunda coluna numérica: ')
+        nova = input('Nome da nova coluna: ')
+        try:
+            # Converte as colunas para numéricas e realiza a soma
+            df[nova] = pd.to_numeric(df[col1], errors='coerce') * pd.to_numeric(df[col2], errors='coerce')
+            print('Coluna criada com sucesso.')
+        except Exception as e:
+            print(f'Erro ao criar coluna: {e}')
 
     # Caso o usuário queira concatenar duas colunas de texto
-    elif opcao == '2':
+    elif opcao == '3':
         col1 = input('Nome da primeira coluna de texto: ')
         col2 = input('Nome da segunda coluna de texto: ')
         nova = input('Nome da nova coluna: ')
@@ -334,14 +345,14 @@ def criar_coluna(df):
             print(f'Erro ao criar coluna: {e}')
 
     # Caso o usuário queira criar uma nova coluna preenchida com um valor fixo
-    elif opcao == '3':
+    elif opcao == '4':
         nova = input('Nome da nova coluna: ')
         valor = input('Valor fixo a ser preenchido: ')
         df[nova] = valor  # Preenche a coluna inteira com o mesmo valor
         print('Coluna criada com sucesso.')
 
     # Caso o usuário queira extrair ano, mês ou dia de uma coluna de datas
-    elif opcao == '4':
+    elif opcao == '5':
         col_data = input('Nome da coluna com datas: ')
         if col_data not in df.columns:
             print('Coluna não encontrada.')
